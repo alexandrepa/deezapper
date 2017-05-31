@@ -1,0 +1,29 @@
+<!-- Sidebar -->
+<div id="sidebar-wrapper">
+
+    <ul class="sidebar-nav">
+
+        <li class="sidebar-brand">
+
+         <img src="img/logo_deezapper.png" alt="Deezapper">
+
+        </li>
+        <li>
+            <a ng-show="!user" data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();" href="#">Sign In</a>
+        </li>
+        <li>
+            <a ng-show="user" ng-click="signOut()" href="#">Sign Out</a>
+        </li>
+        <li>
+            Devices
+          </li>
+            <li ng-repeat="(key, value) in Devices">
+
+          <a href="#" ng-click="value.connected==true && selectDevice(key)">{{key}}<i ng-show="value.connected==true" class="fa fa-circle" style="font-size:10px;color:green;"></i></li></a>
+
+
+        </li>
+
+    </ul>
+
+</div>

@@ -1,0 +1,91 @@
+.row {
+  display: flex;
+  align-items: center;
+}
+
+#player-container  {
+  background-color: white;
+}
+
+
+
+#player-container .trackInfo  {
+  padding-left: 0;
+  padding-right: 0;
+  text-align: :center;
+}
+#buttons .col-xs-4 {
+  padding-left: 0;
+  padding-right: 0;
+}
+#buttons .col-xs-8{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.fa {
+  display:inline;
+  padding-left:4px;
+}
+
+#sidebar-wrapper{
+      color: #666;
+}
+
+.trackCover{
+  width:100px;
+  padding-right: 10px;
+  margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.trackCover img{
+  width:75px;
+height: 75px;
+}
+#tracklist img{
+  width:60px;
+height: 60px;
+
+}
+#tracklist span {
+    display: table-cell;
+    height: 50px;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+.volume{
+  width: 55px;
+padding: 1px 2px;
+}
+
+.time{
+  padding: 0px 0px;
+}
+
+.sidebar-brand img {
+width : 80%;
+}
+
+@media(max-width:768px){
+.trackCover{
+  width:75px;
+  padding-right: 10px;
+}
+.trackCover img{
+  width:50px;
+height: 50px;
+}
+#tracklist img{
+  width:50px;
+height: 50px;
+}
+
+.volume{
+  width: 30px;
+padding: 1px 2px;
+}
+.sidebar-brand img {
+width : 60%;
+}
+}

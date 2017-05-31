@@ -1,0 +1,76 @@
+<!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+
+    });
+
+
+    $(document).ready(function () {
+
+      var trigger = $('.hamburger'),
+         isClosed = true;
+
+        trigger.click(function () {
+          hamburger_cross();
+        });
+
+        function hamburger_cross() {
+
+          if (isClosed == true) {
+            trigger.removeClass('is-open');
+            trigger.addClass('is-closed');
+            isClosed = false;
+          } else {
+            trigger.removeClass('is-closed');
+            trigger.addClass('is-open');
+            isClosed = true;
+          }
+      }
+    });
+    </script>
+
+<div class="modal fade login" id="loginModal">
+     <div class="modal-dialog login animated">
+         <div class="modal-content">
+            <div class="modal-header">
+                   <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                   <h4 class="modal-title">Login with</h4>
+               </div>
+               <div class="modal-body">
+                   <div class="box">
+                        <div class="content">
+                           <div class="social">
+                               <a class="circle github" href="#">
+                                   <i class="fa fa-github fa-fw"></i>
+                               </a>
+                               <a id="google_login" class="circle google" href="#">
+                                   <i class="fa fa-google-plus fa-fw"></i>
+                               </a>
+                               <a id="facebook_login" class="circle facebook" href="#">
+                                   <i class="fa fa-facebook fa-fw"></i>
+                               </a>
+                           </div>
+                           <div class="division">
+                               <div class="line l"></div>
+                                 <span>or</span>
+                               <div class="line r"></div>
+                           </div>
+                           <div class="error">
+                             <p ng-if="message"><strong>{{ message }}</strong></p>
+                            </div>
+                           <div class="form loginBox">
+                               <form method="post" action="/login" accept-charset="UTF-8">
+                               <input id="email" ng-model="email" class="form-control" type="text" placeholder="Email" name="email">
+                               <input id="password" ng-model="password" class="form-control" type="password" placeholder="Password" name="password">
+                               <input class="btn btn-default btn-login" ng-click="signIn()" type="button" value="Login">
+                               </form>
+                           </div>
+                        </div>
+                   </div>
+               </div>
+
+         </div>
+     </div>
+ </div>

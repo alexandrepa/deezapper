@@ -1,0 +1,30 @@
+<div id="page-content-wrapper">
+  <button type="button" id="menu-toggle" class="hamburger is-open" data-toggle="offcanvas">
+       <span class="hamb-top"></span>
+ <span class="hamb-middle"></span>
+<span class="hamb-bottom"></span>
+   </button>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+            <div id="tracklist">
+
+              <div class="list-group">
+                <div ng-repeat="(key, value) in Deezer.deezerControl.tracklist">
+
+             <a href="#" ng-class= "{'active': key == Deezer.deezerControl.dz_index_track}" ng-click="tracklistPlay(key)" class="list-group-item clearfix">
+
+               <img class="pull-left" ng-src="{{value.dz_cover}}" >
+
+               <span>{{value.dz_artist}} - {{value.dz_track}}</span>
+             </a>
+
+            </div>
+
+          </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /#page-content-wrapper -->

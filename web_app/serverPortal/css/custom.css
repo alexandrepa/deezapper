@@ -1,0 +1,25 @@
+
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 4px;
+  width: auto;
+}
+
+.tuto{
+  margin-top: 20px;
+
+}
+.list-group-item{
+  border-color: #afafaf;
+}
+
+#portfolio .img-responsive{
+  margin : auto;
+  max-width: 70%;
+}
+#portfolio p{
+  text-align: center;
+}
