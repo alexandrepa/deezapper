@@ -14,15 +14,15 @@ No needs to install anything on your mobile, just run https://deezapper.firebase
 
 ## Screenshots
 
-![web player](/description/screen_grand.PNG
+![web player](/description/screen_grand.PNG)
 
 ## Links
 
 ### The project page
-(https://deezapper.firebaseapp.com/serverPortal)
+https://deezapper.firebaseapp.com/serverPortal
 
 ### The chrome extension
-(https://chrome.google.com/webstore/detail/deezapper-deezer-remote-c/kaklgpgemfmolohjpjbodjigkoedehkl)
+https://chrome.google.com/webstore/detail/deezapper-deezer-remote-c/kaklgpgemfmolohjpjbodjigkoedehkl
 
 ### The AngularJS web app
-(https://deezapper.firebaseapp.com)
+https://deezapper.firebaseapp.com
