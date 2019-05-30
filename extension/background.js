@@ -68,7 +68,7 @@ function checkSetup(){
   var setup = database.ref('users/'+uid+'/devices/'+device_name+'/setup');
   setup.on('value', function(snapshot) {
   if(snapshot.val()==="launch"){
-  var newURL = "http://www.deezer.com";
+  var newURL = "https://www.deezer.com";
     openMyTab(newURL);
     setup.set("wait");
   }

@@ -110,8 +110,8 @@ var gCheckIfReady = new MutationObserver(function(mutations)
 // do we have the elements needed to work?
 function okForLoad()
 {
-	console.log(document.querySelector(".player-track-link"));
-	return document.querySelector(".player-track-link") !== null;
+	console.log(document.querySelector(".player-track .track-link"));
+	return document.querySelector(".player-track .track-link") !== null;
 }
 
 function bootstrap()

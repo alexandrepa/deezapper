@@ -153,12 +153,9 @@ function updateDeezerControlData()
 	// ensure the player is on the page
 	if (dzPlayer !== null)
 	{
-		var player_track_title = $(".player-track-title");
-		var player_control_play = $(".control, .icon-love-circle, .icon-love");
+		var player_track_title_control = $(".player-track .track-title, .player-controls li");
 
-		// observe the changes of style attribute of #player_control_play, to track play / pause changes
-		// (its style changes from hidden to display)
-		// observe the changes of content of #player_track_title, to track song changes
+		// observe the changes of content of .track-title, to track song changes
 		var observerPlay = new MutationObserver(function(mutations)
 		{
 			"use strict";
@@ -186,8 +183,7 @@ function updateDeezerControlData()
 			}
 		});
 
-		player_track_title.each(function ()  { observerPlay.observe(this, { childList: true, characterData: true, subtree: true }); });
-		player_control_play.each(function () { observerPlay.observe(this, { attributes: true, attributeOldValue: true, attributeFilter: ['class', 'style', 'data-action'] }); });
+		player_track_title_control.each(function ()  { observerPlay.observe(this, { childList: true, characterData: true, subtree: true }); });
 
 		// observe change in DOM, and attach observerPlay to all the "love" icons
 		var oberserLoveIcons = new MutationObserver(function(mutations)
